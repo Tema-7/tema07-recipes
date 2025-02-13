@@ -1,10 +1,10 @@
-// Hämta kategori från URL
-const mycategory = new URLSearchParams(window.location.search).get("recipe_list_container");
-
 // Hämta alla recept
 const recipe_list_container = document.querySelector("#recipe_list_container");
 
-// Hämta produkter baserat på vald kategori
+// Hämta recept från URL
+const myrecipe = new URLSearchParams(window.location.search).get("recipe_list_container");
+
+// Hämta recept
 fetch(`https://dummyjson.com/recipes`)
   .then((response) => response.json())
   .then((data) => showList(data.recipes));
