@@ -15,6 +15,17 @@ function showList(data) {
       (recipe) =>
         `  <article class="card">
             <h2>${recipe.name}</h2>
+            <img src="https://cdn.dummyjson.com/recipe-images/${recipe.id}.webp" alt="${recipe.name}" />
+  <div class="rating">
+            <p>${recipe.rating}</p>
+            <p>(${recipe.reviewCount} reveiws)</p>
+</div>
+<p>Cooking Time: <span>${recipe.cookTimeMinutes + recipe.prepTimeMinutes}</span> min</p>
+<p>Difficulty: ${recipe.difficulty}</p>
+<div class="tags">
+            <p>${recipe.tags}</p>
+</div>
+
         </article>`
     )
     .join("");
