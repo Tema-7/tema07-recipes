@@ -15,7 +15,9 @@ function showList(data) {
       (recipe) =>
         `  <article class="card">
             <h2>${recipe.name}</h2>
+                        <a href="detaljer.html?id=${recipe.id}">
             <img src="https://cdn.dummyjson.com/recipe-images/${recipe.id}.webp" alt="${recipe.name}" />
+            </a>
   <div class="rating">
             <p>${recipe.rating}</p>
             <p>(${recipe.reviewCount} reveiws)</p>
