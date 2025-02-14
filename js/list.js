@@ -52,19 +52,26 @@ fetch("https://dummyjson.com/recipes")
         .map(
           (recipe) =>
             `  <article class="card">
-              <h2>${recipe.name}</h2>  <!-- Visa receptets namn -->
               <a href="detaljer.html?id=${recipe.id}">
+              <div class="orange">
                 <img src="https://cdn.dummyjson.com/recipe-images/${recipe.id}.webp" alt="${recipe.name}" loading="lazy" />  <!-- Visa bild för receptet med lazy loading -->
               </a>
+              </div>
+              <h2>${recipe.name}</h2>  <!-- Visa receptets namn -->
+
               <div class="rating">
                 <p>${recipe.rating}</p>  <!-- Visa receptets betyg -->
                 <p>(${recipe.reviewCount} reviews)</p>  <!-- Visa antalet recensioner -->
               </div>
+                            <div class="cooking">
+
               <p>Cooking Time: <span>${recipe.cookTimeMinutes + recipe.prepTimeMinutes}</span> min</p>  <!-- Visa total tid för matlagning (tillagning + förberedelse) -->
               <p>Difficulty: ${recipe.difficulty}</p>  <!-- Visa svårighetsgrad -->
+                            </div>
+
               <div class="tags">
-                <p>${recipe.tags}</p>  <!-- Visa tags för receptet (t.ex. "Pizza", "Italian") -->
-              </div>
+  ${recipe.tags.map((tag) => `<p>${tag}</p>`).join("")}
+</div>
             </article>`
         )
         .join(""); // Vi slår ihop alla recept i en sträng för att skapa en HTML-sektion

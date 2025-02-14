@@ -1,0 +1,68 @@
+.recipe_list_container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); /* Responsiv layout */
+  max-width: 1600px;
+  margin: 0px auto;
+}
+
+.card {
+  display: grid;
+  grid-template-rows: subgrid;
+  grid-row: span 6;
+  gap: 0;
+  margin: 50px 30px 50px 30px;
+}
+
+.cooking {
+  margin-top: -13px;
+  margin-bottom: -12px;
+}
+
+.rating p {
+  margin-bottom: 25px;
+  margin-top: -10px;
+}
+
+img {
+  max-width: 100%;
+  margin-bottom: -17px;
+}
+
+.orange {
+  background-color: #f2491e;
+  padding-bottom: 12px;
+}
+
+img:hover {
+  opacity: 0.8;
+}
+
+.tags,
+.rating {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.tags p {
+  color: white;
+  border-radius: 25px;
+  padding: 8px 17px 10px 17px;
+  height: 13px;
+  background-color: #f2491e;
+  margin-bottom: -5%;
+  margin-top: 15px;
+}
+
+select {
+  background-color: #f2491e;
+  border-radius: 40px;
+  color: white;
+  padding: 15px 35px;
+  border: none;
+  font-size: 20px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 65px;
+}
