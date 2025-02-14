@@ -1,0 +1,22 @@
+:root {
+  /* Primärfärg från styletyle (orange) */
+  --primary-color: #e18f68;
+  /* Sekundär från styletyle (mörkgrå) */
+  --secondary-color: #565656;
+  /* Overskrift font */
+  --heading-font: "Anton", serif;
+  /* Secondary font */
+  --second-font: "Open-sans", sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  color: var(--primary-color);
+  font-family: var(--heading-font);
+}
+
+p {
+  color: var(--primary-color);
+  font-family: var(--second-font);
+}
