@@ -9,7 +9,7 @@ fetch(`https://dummyjson.com/recipes/${myid}`)
     // Uppdatera HTML med produktens information
     singlerecipeContainer.innerHTML = `
         <div class="singlerecipe">
-            <img src="https://cdn.dummyjson.com/recipe-images/${data.id}.webp" alt="${data.name}" />
+            <img src="https://cdn.dummyjson.com/recipe-images/${data.id}.webp" alt="${data.name}" loading="lazy" />
 
             <section class="recipe_details">
               <h2 class="recipe_name">${data.name}</h2>
