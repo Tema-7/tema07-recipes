@@ -11,19 +11,36 @@ fetch(`https://dummyjson.com/recipes/${myid}`)
     singlerecipeContainer.innerHTML = `
         <!-- Här skapas en div med klass "singlerecipe" som innehåller detaljer om receptet -->
         <div class="singlerecipe">
+          <!-- Visa receptets namn i en h2-tagg -->
+              <h2 class="recipe_name">${data.name}</h2>
+              <div class="recipe_descriptions">
+              <div class="rating">
+                <p>${data.rating}</p>  <!-- Visa receptets betyg -->
+                <p>(${
+                  data.reviewCount
+                } reviews)</p>  <!-- Visa antalet recensioner -->
+              </div>
+              <p>Difficulty:</strong> ${data.difficulty}</p>
+              <!-- Visa den totala tillagningstiden (prepTime + cookTime) -->
+              <p>Cook Time:</strong> ${
+                data.cookTimeMinutes + data.prepTimeMinutes
+              } min</p>
+              <div class="tags">
+  ${data.tags.map((tag) => `<p>${tag}</p>`).join("")}
+</div>
+</div>
             <!-- Visa bild på receptet, ladda den först när den behövs (lazy loading) -->
-            <img src="https://cdn.dummyjson.com/recipe-images/${data.id}.webp" alt="${data.name}" loading="lazy" />
+            <img src="https://cdn.dummyjson.com/recipe-images/${
+              data.id
+            }.webp" alt="${data.name}" loading="lazy" />
 
             <!-- Sektion som innehåller all detaljerad information om receptet -->
             <section class="recipe_details">
-              <!-- Visa receptets namn i en h2-tagg -->
-              <h2 class="recipe_name">${data.name}</h2>
+            
               <!-- Visa instruktionerna för receptet -->
               <p class="recipe_description">${data.instructions}</p>
               <!-- Visa svårighetsgrad för receptet -->
-              <p><strong>Difficulty:</strong> ${data.difficulty}</p>
-              <!-- Visa den totala tillagningstiden (prepTime + cookTime) -->
-              <p><strong>Cook Time:</strong> ${data.cookTimeMinutes + data.prepTimeMinutes} min</p>
+              
             </section>
         </div>
     `;
