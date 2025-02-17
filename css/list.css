@@ -53,6 +53,16 @@ img:hover {
   margin-top: 15px;
 }
 
+.star {
+  display: inline;
+  font-size: inherit;
+}
+
+.rating p,
+.star {
+  line-height: 1; /* Se till att båda har samma radavstånd */
+}
+
 select {
   background-color: #f2491e;
   border-radius: 40px;
