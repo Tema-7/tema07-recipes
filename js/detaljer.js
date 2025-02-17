@@ -15,10 +15,9 @@ fetch(`https://dummyjson.com/recipes/${myid}`)
               <h2 class="recipe_name">${data.name}</h2>
               <div class="recipe_descriptions">
               <div class="rating">
-                <p>${data.rating}</p>  <!-- Visa receptets betyg -->
-                <p>(${
-                  data.reviewCount
-                } reviews)</p>  <!-- Visa antalet recensioner -->
+<p>${data.rating} <span class="star">★</span></p>                <p>(${
+      data.reviewCount
+    } reviews)</p>  <!-- Visa antalet recensioner -->
               </div>
               <p>Difficulty:</strong> ${data.difficulty}</p>
               <!-- Visa den totala tillagningstiden (prepTime + cookTime) -->
@@ -34,11 +33,20 @@ fetch(`https://dummyjson.com/recipes/${myid}`)
               data.id
             }.webp" alt="${data.name}" loading="lazy" />
 
+<section class="recipe_ingredients">
+
+<ul class="recipe_ingredients">${data.ingredients
+      .map((ingredients) => `<li>${ingredients}</li>`)
+      .join("")}</ul>
+
+</section>
             <!-- Sektion som innehåller all detaljerad information om receptet -->
             <section class="recipe_details">
             
               <!-- Visa instruktionerna för receptet -->
-              <p class="recipe_description">${data.instructions}</p>
+              <p class="recipe_description">${data.instructions
+                // .map((instructions) => `<p>${instructions}</p>`)
+                .join(" ")}</p>
               <!-- Visa svårighetsgrad för receptet -->
               
             </section>
