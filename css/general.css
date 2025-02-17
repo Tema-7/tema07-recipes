@@ -11,12 +11,31 @@
 
 h1,
 h2,
-h3 {
+h3,
+nav a,
+nav a:visited {
   color: var(--primary-color);
   font-family: var(--heading-font);
+  text-decoration: none;
 }
 
 p {
   color: var(--primary-color);
   font-family: var(--second-font);
+}
+
+nav {
+  border-bottom: solid var(--primary-color) 3px;
+}
+nav ul {
+  list-style-type: none;
+  padding-bottom: 30px;
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 8%;
+}
+
+nav a {
+  font-size: 30px;
 }
