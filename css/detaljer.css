@@ -28,8 +28,7 @@ img {
 .recipe_name{
     font-size: 60px;
     border-bottom: solid 3px #f2491e;
-padding-bottom: 40px;
-padding-top: 40px;
+padding: 10%;
 }
 
 .recipe_description{
@@ -67,20 +66,23 @@ grid-template-columns: 1fr 1fr;
     grid-row: 1; 
 }
 .recipe_name{
-padding: 0;
+    margin-bottom: 50%;
 }
 .recipe_ingredients{
-    border-top: solid 3px #f2491e;
+    border-top: solid 2px #f2491e;
+    border-right: solid 2px #f2491e;
 
     grid-column: 1;
     grid-row: 3; 
+
 }
 .recipe_description{
     grid-column: 2;
     grid-row: 2; 
     border-top: solid 0px #f2491e;
     border-left: solid 3px #f2491e;
-
+    margin-top: -200;
+    padding: 10%;
 
 }
 }
