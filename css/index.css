@@ -1,10 +1,14 @@
 h1 {
-  font-size: 60px;
+  font-size: 55px;
 }
+
+.contentindex {
+  margin-top: 10%;
+}
+
 .ungens-opskrift_grid {
   display: grid;
   grid-template-columns: 1fr;
-  background: "f9f9f9";
   border-bottom: 3px solid #f2491e;
 }
 
@@ -15,7 +19,7 @@ h1 {
 
 .opskrift_container img {
   width: 100%;
-  object-fit: cover;
+  /* object-fit: cover; */
 }
 
 .ugens-opskrift-knap {
@@ -25,18 +29,25 @@ h1 {
   color: white;
   padding: 5px 10px;
   font-weight: bold;
-  font-size: 25px;
+  font-size: 30px;
   text-decoration: underline;
   font-family: "Open-sans", sans-serif;
+  letter-spacing: 0.5px;
+}
+.ugens-opskrift-knap a:visited {
+  color: white;
 }
 
 .tilbudsstjerne {
   position: absolute;
-  bottom: -110px;
-  left: 45%;
-  transform: translateX(-55%);
-  width: 250px;
-  height: auto;
+  margin-top: -20%;
+  margin-left: 5%;
+  width: 60%;
+  transform: rotate(8deg);
+}
+
+.tilbudsstjerne:hover {
+  filter: saturate(1.5);
 }
 
 button {
@@ -51,7 +62,7 @@ button {
 
 .kategori {
   text-align: center;
-  padding: 50px 0px;
+  padding-top: 70px;
 }
 
 img {
@@ -123,7 +134,6 @@ h2 {
   .ungens-opskrift_grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    background: "f9f9f9";
   }
 
   .grid_2fr-1fr-fr {
@@ -131,5 +141,25 @@ h2 {
     grid-template-columns: 2fr 1fr 1fr;
     margin: 0 100px;
     gap: 50px;
+  }
+  .tilbudsstjerne {
+    position: absolute;
+    margin-top: -13%;
+    margin-left: 30%;
+    width: 35%;
+  }
+
+  .ungens-opskrift_grid h1 {
+    font-size: 4.5vw;
+    margin-left: 20px;
+  }
+
+  h1 {
+    font-size: 70px;
+  }
+
+  .kategori {
+    padding-top: 70px;
+    padding-bottom: 50px;
   }
 }

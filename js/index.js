@@ -8,12 +8,16 @@ fetch("https://dummyjson.com/recipes")
         <section class="ungens-opskrift_grid">
         <h1>Lækre Opskrifter til et stramt budget</h1>         
             <div class="opskrift_container">
-                <img src="${ugensOpskrift.image}" alt="${ugensOpskrift.name}" width="200">
+                <img src="arbejdsfiler/index.webp" alt="${ugensOpskrift.name}" width="200">
                 <div class="ugens-opskrift-knap">
-                    <a id="ugens-opskrift-knap" href="index.html">Ugens opskrift</a>
+                    <a id="ugens-opskrift-knap" href="detaljer.html?id=16">Ugens opskrift</a>
                 </div>
-               <img class="tilbudsstjerne" src="imgs/tilbudsstjerne.png" alt="Stjerne med tekst">
-            </div>
+                </div>
+                             
+<a href="detaljer.html?id=16">
+    <img class="tilbudsstjerne" src="arbejdsfiler/tillbudsstar.svg" alt="Stjerne med tekst">
+</a>
+
         </section>
     `;
   })
