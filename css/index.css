@@ -2,6 +2,18 @@ h1 {
   font-size: 55px;
 }
 
+p {
+  font-size: 18px;
+}
+
+h3 {
+  font-size: 25px;
+  max-width: 50ch;
+}
+
+.h3font {
+  font-family: "Open-sans", sans-serif;
+}
 .contentindex {
   margin-top: 10%;
 }
@@ -60,6 +72,9 @@ button {
   font-size: 25px;
 }
 
+button:hover {
+  background-color: #f2481ee4;
+}
 .kategori {
   text-align: center;
   padding-top: 70px;
@@ -70,7 +85,7 @@ img {
 }
 
 h2 {
-  font-size: 50px;
+  font-size: 55px;
   text-decoration: underline;
 }
 
@@ -139,7 +154,7 @@ h2 {
   .grid_2fr-1fr-fr {
     display: grid;
     grid-template-columns: 2fr 1fr 1fr;
-    margin: 0 100px;
+    margin: 0 80px;
     gap: 50px;
   }
   .tilbudsstjerne {
