@@ -28,6 +28,11 @@ p {
   font-family: var(--second-font);
 }
 
+label {
+  font-family: var(--second-font);
+  font-size: 20px;
+}
+
 nav {
   border-bottom: solid var(--primary-color) 3px;
 }
