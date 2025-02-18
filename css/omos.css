@@ -1,0 +1,44 @@
+.omos_container {
+    padding: 20px
+  }
+  
+  
+  .omos_container p{
+     padding-bottom: 50px
+  }
+  
+  
+  .omos_container img {
+     width: 90vw;
+     height: 100%;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  @media (width>800px) {
+     .omos_container {
+         display: flex;
+      padding: 30pt 20pt;
+     gap: 50px;
+     }
+    
+     .omos_container img {
+         width: 45vw;
+         height: 100%;
+    
+     }
+  
+  
+     .omos_container p {
+         margin-top: -3px;
+     }
+  }
+    
+   
+  
+  
