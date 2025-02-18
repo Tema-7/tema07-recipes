@@ -1,19 +1,8 @@
 img {
     max-width: 100%;
-    margin-bottom: -17px;
+    /* margin-bottom: -17px; */
   }
-.recipe_name{
-    font-size: 60px;
-    border-bottom: solid 3px #f2491e;
-padding-bottom: 40px;
-padding-top: 40px;
-}
- .recipe_descriptions{
-    border-bottom: solid 3px #f2491e;
-    padding-bottom: 10px;
-    margin-top: -20px;
 
-  }
   .tags, .rating {
     display: flex;
     flex-wrap: wrap;
@@ -36,17 +25,62 @@ padding-top: 40px;
   line-height: 1; /* Se till att båda har samma radavstånd */
 }
 
- .recipe_ingredients ul{
-    color: var(--primary-color);
-  font-family: var(--second-font);
-    border-top: solid 3px #f2491e;
-    line-height: 2;
-    padding: 8%;
-    padding-left: 12%;
+.recipe_name{
+    font-size: 60px;
+    border-bottom: solid 3px #f2491e;
+padding-bottom: 40px;
+padding-top: 40px;
 }
 
 .recipe_description{
     border-top: solid 3px #f2491e;
     padding: 10%;
     line-height: 1.5;
+}
+
+.recipe_img{
+    border-top: solid 3px #f2491e;
+
+    border-bottom: solid 3px #f2491e;
+}
+ 
+.recipe_ingredients ul{
+    color: var(--primary-color);
+  font-family: var(--second-font);
+    line-height: 2;
+    padding: 8%;
+    padding-left: 12%;
+}
+
+
+@media (min-width:750px) {
+    .singlerecipe{
+display: grid; 
+grid-template-columns: 1fr 1fr;
+}
+.recipe_img{
+    border-top: solid 0px #f2491e;
+
+    border-left: solid 3px #f2491e;
+    border-bottom: solid 3px #f2491e;
+    grid-column: 2;
+    grid-row: 1; 
+}
+.recipe_name{
+padding: 0;
+}
+.recipe_ingredients{
+    border-top: solid 3px #f2491e;
+
+    grid-column: 1;
+    grid-row: 3; 
+}
+.recipe_description{
+    grid-column: 2;
+    grid-row: 2; 
+    border-top: solid 0px #f2491e;
+    border-left: solid 3px #f2491e;
+
+
+}
 }
