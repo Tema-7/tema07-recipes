@@ -15,38 +15,28 @@ fetch(`https://dummyjson.com/recipes/${myid}`)
               <h2 class="recipe_name">${data.name}</h2>
               <div class="recipe_descriptions">
               <div class="rating">
-<p>${data.rating} <span class="star">★</span></p>                <p>(${
-      data.reviewCount
-    } reviews)</p>  <!-- Visa antalet recensioner -->
+<p>${data.rating} <span class="star">★</span></p>                <p>(${data.reviewCount} reviews)</p>  <!-- Visa antalet recensioner -->
               </div>
               <p>Difficulty:</strong> ${data.difficulty}</p>
               <!-- Visa den totala tillagningstiden (prepTime + cookTime) -->
-              <p>Cook Time:</strong> ${
-                data.cookTimeMinutes + data.prepTimeMinutes
-              } min</p>
+              <p>Cook Time:</strong> ${data.cookTimeMinutes + data.prepTimeMinutes} min</p>
               <div class="tags">
   ${data.tags.map((tag) => `<p>${tag}</p>`).join("")}
 </div>
 </div>
             <!-- Visa bild på receptet, ladda den först när den behövs (lazy loading) -->
-            <img class="recipe_img" src="https://cdn.dummyjson.com/recipe-images/${
-              data.id
-            }.webp" alt="${data.name}" loading="lazy" />
+            <img class="recipe_img" src="https://cdn.dummyjson.com/recipe-images/${data.id}.webp" alt="${data.name}" loading="lazy" />
 
 <section class="recipe_ingredients">
-
-<ul class="recipe_ingredients">${data.ingredients
-      .map((ingredients) => `<li>${ingredients}</li>`)
-      .join("")}</ul>
+<h2>Ingredienser</h2>
+<ul class="recipe_ingredients">${data.ingredients.map((ingredients) => `<li>${ingredients}</li>`).join("")}</ul>
 
 </section>
             <!-- Sektion som innehåller all detaljerad information om receptet -->
             <section class="recipe_details">
             
               <!-- Visa instruktionerna för receptet -->
-              <p class="recipe_details">${data.instructions
-                .map((instructions) => `<p>${instructions}</p>`)
-                .join(" ")}</p>
+              <p class="recipe_details">${data.instructions.map((instructions) => `<p>${instructions}</p>`).join(" ")}</p>
               <!-- Visa svårighetsgrad för receptet -->
               
             </section>
