@@ -29,7 +29,7 @@ fetch(`https://dummyjson.com/recipes/${myid}`)
 </div>
 </div>
             <!-- Visa bild på receptet, ladda den först när den behövs (lazy loading) -->
-            <img src="https://cdn.dummyjson.com/recipe-images/${
+            <img class="recipe_img" src="https://cdn.dummyjson.com/recipe-images/${
               data.id
             }.webp" alt="${data.name}" loading="lazy" />
 
