@@ -23,6 +23,10 @@ nav a:visited {
   text-decoration: none;
 }
 
+nav img {
+  width: 85px;
+}
+
 p {
   color: var(--primary-color);
   font-family: var(--second-font);
