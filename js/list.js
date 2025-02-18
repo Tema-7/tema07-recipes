@@ -36,7 +36,7 @@ function ShowProduct(event) {
             </div>
             <h2>${recipe.name}</h2>
             <div class="rating">
-              <p>${recipe.rating} <span class="star">★</span></p>
+              <p>${recipe.rating} <span class="star"></span></p>
               <p>(${recipe.reviewCount} reviews)</p>
             </div>
             <div class="cooking">

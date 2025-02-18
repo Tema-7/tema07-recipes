@@ -18,3 +18,10 @@ fetch("https://dummyjson.com/recipes")
     `;
   })
   .catch((error) => console.error("Fejl ved hentning af data:", error));
+
+document.querySelectorAll(".indexcard").forEach((card) => {
+  card.addEventListener("click", function () {
+    const recipeId = this.getAttribute("data-id");
+    window.location.href = `detaljer.html?id=${recipeId}`;
+  });
+});
