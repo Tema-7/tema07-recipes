@@ -44,8 +44,8 @@ fetch(`https://dummyjson.com/recipes/${myid}`)
             <section class="recipe_details">
             
               <!-- Visa instruktionerna för receptet -->
-              <p class="recipe_description">${data.instructions
-                // .map((instructions) => `<p>${instructions}</p>`)
+              <p class="recipe_details">${data.instructions
+                .map((instructions) => `<p>${instructions}</p>`)
                 .join(" ")}</p>
               <!-- Visa svårighetsgrad för receptet -->
               
