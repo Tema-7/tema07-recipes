@@ -1,6 +1,7 @@
 .recipe_list_container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); /* Responsiv layout */
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-rows: repeat(auto-fill, minmax(150px, auto));
   max-width: 1600px;
   margin: 0px auto;
 }
