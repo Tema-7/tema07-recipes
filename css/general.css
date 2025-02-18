@@ -16,6 +16,10 @@ nav a,
 nav a:visited {
   color: var(--primary-color);
   font-family: var(--heading-font);
+}
+
+nav a,
+nav a:visited {
   text-decoration: none;
 }
 
@@ -38,4 +42,19 @@ nav ul {
 
 nav a {
   font-size: 30px;
+}
+
+footer {
+  background-color: var(--primary-color);
+  margin-top: 70px;
+  padding: 10px 0 10px 0;
+}
+.footerlinks {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footerlinks a {
+  padding: 30px;
 }
