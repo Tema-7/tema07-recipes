@@ -3,8 +3,9 @@
   }
   
   
-  .omos_container p{
-     padding-bottom: 50px
+  .omos_container p {
+     padding-bottom: 50px;
+     line-height: 16pt;
   }
   
   
@@ -12,6 +13,7 @@
      width: 90vw;
      height: 100%;
   }
+
   
   
   
