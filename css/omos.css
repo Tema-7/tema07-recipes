@@ -1,46 +1,45 @@
 .omos_container {
-    padding: 20px
-  }
-  
-  
-  .omos_container p {
-     padding-bottom: 50px;
-     line-height: 16pt;
-  }
-  
-  
-  .omos_container img {
-     width: 90vw;
-     height: 100%;
+  padding: 20px;
+  margin: 40px auto;
+}
+
+.omos_container p {
+  padding-bottom: 50px;
+  line-height: 16pt;
+}
+
+.omos_container img {
+  width: 90vw;
+  height: 100%;
+}
+
+h1 {
+  font-size: 50px;
+}
+
+p {
+  font-size: 20px;
+  max-width: 65ch;
+}
+
+img {
+  max-width: 100%;
+}
+
+@media (width>800px) {
+  .omos_container {
+    display: flex;
+    padding: 30pt 20pt;
+    gap: 50px;
+    margin-left: 50px;
   }
 
-  
-  
-  
-  
-  
-  
-  
-  
-  @media (width>800px) {
-     .omos_container {
-         display: flex;
-      padding: 30pt 20pt;
-     gap: 50px;
-     }
-    
-     .omos_container img {
-         width: 45vw;
-         height: 100%;
-    
-     }
-  
-  
-     .omos_container p {
-         margin-top: -3px;
-     }
+  .omos_container img {
+    width: 45vw;
+    height: 100%;
   }
-    
-   
-  
-  
+
+  .omos_container p {
+    margin-top: -3px;
+  }
+}
