@@ -69,18 +69,54 @@ h2 {
 }
 
 .formcontainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 3px solid #f2491e;
+  margin-top: 80px;
+}
+
+.form {
   background-color: #f2491e;
   color: white;
-  width: 450px;
-  padding: 50px;
+  width: 400px;
+  padding: 50px 70px 30px 70px;
   border-radius: 50px;
   margin-top: 70px;
   align-content: center;
 }
 
-.formcontainer h3,
-.formcontainer p {
+.form button {
+  background-color: white;
+  color: #f2491e;
+  padding: 2px 15px 2px 15px;
+  font-size: 20px;
+  margin-top: 5px;
+}
+
+.formbox {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.form button:hover {
+  opacity: 0.8;
+}
+
+.form h3,
+.form p {
   color: white;
+}
+
+.form p {
+  font-size: 20px;
+  margin-top: -5%;
+}
+.form h3 {
+  letter-spacing: 0.5px;
+  font-size: 30px;
 }
 
 @media (width >= 800px) {
