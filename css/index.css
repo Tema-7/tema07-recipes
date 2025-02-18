@@ -11,8 +11,10 @@ h3 {
   max-width: 50ch;
 }
 
-.h3font {
+.h3font,
+.button {
   font-family: "Open-sans", sans-serif;
+  text-decoration: none;
 }
 .contentindex {
   margin-top: 10%;
@@ -62,7 +64,7 @@ h3 {
   filter: saturate(1.5);
 }
 
-button {
+.button {
   color: white;
   border-radius: 30px;
   padding: 8px 30px 10px 30px;
@@ -72,7 +74,7 @@ button {
   font-size: 25px;
 }
 
-button:hover {
+.button:hover {
   background-color: #f2481ee4;
 }
 .kategori {
