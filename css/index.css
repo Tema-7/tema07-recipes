@@ -16,6 +16,11 @@ h3 {
   font-family: "Open-sans", sans-serif;
   text-decoration: none;
 }
+
+.h3font {
+  font-size: 23px;
+  margin-bottom: 50px;
+}
 .contentindex {
   margin-top: 10%;
 }
@@ -48,7 +53,8 @@ h3 {
   font-family: "Open-sans", sans-serif;
   letter-spacing: 0.5px;
 }
-.ugens-opskrift-knap a:visited {
+.ugens-opskrift-knap a:visited,
+.ugens-opskrift-knap a {
   color: white;
 }
 
@@ -69,7 +75,7 @@ h3 {
   border-radius: 30px;
   padding: 8px 30px 10px 30px;
   background-color: #f2491e;
-  margin: 25px 0px 50px 0;
+  margin: 25px 0px 100px 0;
   border: none;
   font-size: 25px;
 }
@@ -84,6 +90,10 @@ h3 {
 
 img {
   max-width: 100%;
+}
+
+.grid_2fr-1fr-fr img {
+  margin-top: 50px;
 }
 
 h2 {
@@ -108,7 +118,7 @@ h2 {
   background-color: #f2491e;
   color: white;
   width: 400px;
-  padding: 50px 70px 30px 70px;
+  padding: 50px 70px 85px 70px;
   border-radius: 50px;
   margin-top: 70px;
   align-content: center;
